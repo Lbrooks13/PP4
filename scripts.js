@@ -22,3 +22,15 @@ window.addEventListener('click', function(event) {
     popupForm.style.display = 'none';
   }
 });
+
+// Field Validation
+function valForm() {
+  const nameInput = document.getElementsById('name');
+
+  if (!isNaN(nameInput)){
+    alert("Please enter a name using alphabetic characters only")
+    nameInput.value = "";
+    return false;
+  }
+}
+
